@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Web Component 相關引入
+import r2wc from "@r2wc/react-to-web-component";
+import MyComponent from './MyComponent';
+
+// 創建 Web Component
+const WebComponent = r2wc(MyComponent, React, ReactDOM);
+customElements.define('demo-dogcatstar-component', WebComponent);
+
+// 原有的 React 應用程式
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -11,7 +20,5 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Performance measuring
 reportWebVitals();

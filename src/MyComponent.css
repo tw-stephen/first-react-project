@@ -1,0 +1,25 @@
+.demo_article {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  padding: 3px;
+  border-radius: 1rem;
+  margin: 2rem;
+}
+
+.demo_div {
+  background: linear-gradient(to right, #e91e63, purple);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.demo_h1 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+.demo_p {
+  margin: 0.75rem 0 0;
+}
